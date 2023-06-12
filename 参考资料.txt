@@ -1,0 +1,34 @@
+参考Github项目地址：
+
+https://github.com/king-yyf/CMeKG_tools
+
+
+需求：
+在知识库里面的疾病的描述中抽取三元组 然后在进行推理
+做这个辅助诊断 根据症状 去 推出疾病是啥  最终目标是有症状之后出来具体的病
+
+
+medical re:
+https://blog.csdn.net/chen_nnn/article/details/122795768
+
+数据集：
+https://github.com/FreedomIntelligence/Medical_NLP
+
+https://zhuanlan.zhihu.com/p/469465499
+
+高可用数据集：
+https://tianchi.aliyun.com/dataset/95414
+
+
+Clip : 图片生成句子
+https://github.com/openai/CLIP
+
+
+一个现成的可能的思路：
+https://www.xjishu.com/zhuanli/55/202010799407.html
+https://wenku.baidu.com/view/fc54d4f3670e52ea551810a6f524ccbff021ca53.html
+
+https://max.book118.com/html/2022/0626/8031105022004113.shtm
+
+pytorch 计算向量相似度：
+https://blog.csdn.net/rocking_struggling/article/details/127855028
