@@ -22,7 +22,7 @@ class FusionModel:
         self.Medical_Re = RE_Inference()  # 症状补充提取模型
         self.min_max_text_limit = min_max_text_limit
 
-        EXCEPT_PUNCTUATION = "， ""！？｡＂＃＄％＆＇（）＊＋－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏"""
+        EXCEPT_PUNCTUATION = "， ""'( ) ！？｡＂＃＄％＆＇（）＊＋－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏"""
         self.EXCEPT_PUNCTUATION = "[{}]+".format(EXCEPT_PUNCTUATION)
 
     @staticmethod
@@ -73,15 +73,15 @@ class FusionModel:
                 # temp_word=word
                 if temp_word[0] in ['(', ')', ',', '.']:
                     temp_word = temp_word[1:]
-                elif temp_word[-1] in ['(', ')', ',', '.']:
+                if temp_word[-1] in ['(', ')', ',', '.']:
                     temp_word = temp_word[:-1]
 
-                elif len(temp_word) > 9:  # 这个值是做异常判断，一般症状长度小于9，大于9的再次预测
+                if len(temp_word) > 9:  # 这个值是做异常判断，一般症状长度小于9，大于9的再次预测
                     ner_word = self.Ner_Short.predict_sentence(temp_word, split_limit=5)
                     symptom_new = self.get_symptom(ner_word)
                     final_symptom = final_symptom + symptom_new
-                else:
-                    final_symptom.append(temp_word)
+
+                final_symptom.append(temp_word)
             else:
                 pass
 
@@ -99,8 +99,8 @@ if __name__ == "__main__":
     for i, text in enumerate(file_pd['疾病描述']):
         symptom_ls = fusion_model.predict(text)
         print(text)
-        print('\n')
         print(symptom_ls)
+        print('\n')
         file_pd.loc[i, '疾病症状'] = ','.join(symptom_ls)
 
     # file_pd.to_excel('result.xlsx')
