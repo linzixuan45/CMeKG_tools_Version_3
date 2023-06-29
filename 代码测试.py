@@ -7,7 +7,11 @@
 # @Email   : 1195860834@qq.com
 # Copyright MIT
 
-import torch
 
-a = torch.tensor([1, 2, 2])
-print(a.pow(4))
+import string
+
+import re
+
+
+line = "ad“”哈哈哈，，0."
+print(line[:-1])

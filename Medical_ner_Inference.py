@@ -149,13 +149,12 @@ class Medical_NER_Infer(object):
         # print(entity_mark)  # index
         return entity_mark
 
-    def predict_sentence(self, sentence):
+    def predict_sentence(self, sentence, split_limit = 10):
         """
         加入重叠区域效果是否会更好
         :param sentence:
         :return:
         """
-        split_limit = 10
         tag_dic = {"d": "疾病", "b": "身体", "s": "症状", "p": "医疗程序", "e": "医疗设备", "y": "药物", "k": "科室",
                    "m": "微生物类", "i": "医学检验项目"}
         sentence = str(sentence)
@@ -314,6 +313,7 @@ if __name__ == "__main__":
     ，伴肚脐上方腹胀。患者面色苍白，有头晕、乏力、口渴，有心悸、反酸，尿量减少。无口腔溃疡、头痛、意识不清，无咳嗽、咳痰、气促，无胸闷、胸痛，无烧心、嗳气、里急后重。患者为求进一步诊治，于1
     天前来我院急诊就诊，行“血常规”，示“Hb 103g/L”，拟“消化道出血”收入我科。患者自起病以来，胃纳、精神差，睡眠可，大小便如上所述，体重体力无明显变化 '''
     # checkpoint = 'checkpoint/medical_ner/model_new_0.996.pkl'
+    # 768
     # """
     # [{'症状': '稀烂便'}, {'症状': '中途呕血'}, {'症状': '面色苍白'}, {'症状': '口渴'},
     # {'症状': '反酸'}, {'症状': '咳嗽'}, {'症状': '胸闷'}, {'症状': '嗳气'},
@@ -334,30 +334,30 @@ if __name__ == "__main__":
     res = my_pred.predict_sentence(text)
     print(res)
 
-    # import pandas as pd
-    # path = r'1_病历.xlsx'
-    # file = pd.read_excel(path, header = None).head(n=100)
-    #
-    # description = file[0].values
-    # new_file = pd.DataFrame(description,column = ['A'])
-    # symptom_ls = []
-    # for des in description:
-    #     res_ls = my_pred.predict_sentence(des)
-    #     symptom = []
-    #     key_flag = 0
-    #     for res in res_ls:
-    #         for key, value in res.items():
-    #             try:
-    #                 if key == "症状":
-    #                     symptom.append(value)
-    #                     print(value)
-    #                     key_flag = 1
-    #             except:
-    #                 pass
-    #         if key_flag == 0:
-    #             symptom.append(" ")
-    #     symptom_str = ",".join(symptom)
-    #     print(symptom_str)
-    #     symptom_ls.append(symptom_str)
-    # new_file['模型预测症状（仅供参考)'] = pd.Series(symptom_ls)
-    # new_file.to_excel('result.xlsx', index=False)
+    import pandas as pd
+    path = r'1_病历.xlsx'
+    file = pd.read_excel(path, header = None).head(n=100)
+
+    description = file[0].values
+    new_file = pd.DataFrame(description,column = ['A'])
+    symptom_ls = []
+    for des in description:
+        res_ls = my_pred.predict_sentence(des)
+        symptom = []
+        key_flag = 0
+        for res in res_ls:
+            for key, value in res.items():
+                try:
+                    if key == "症状":
+                        symptom.append(value)
+                        print(value)
+                        key_flag = 1
+                except:
+                    pass
+            if key_flag == 0:
+                symptom.append(" ")
+        symptom_str = ",".join(symptom)
+        print(symptom_str)
+        symptom_ls.append(symptom_str)
+    new_file['模型预测症状（仅供参考)'] = pd.Series(symptom_ls)
+    new_file.to_excel('result.xlsx', index=False)

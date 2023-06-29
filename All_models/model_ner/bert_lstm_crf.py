@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Author: ding zeyuan
-# @Date:   2019-7-5 18:24:32
 from itertools import zip_longest
 import torch.nn as nn
 from transformers import BertModel
@@ -48,7 +46,10 @@ class BERT_LSTM_CRF(nn.Module):
         batch_size = sentence.size(0)
         seq_length = sentence.size(1)
         embeds, _ = self.word_embeds(sentence, attention_mask=attention_mask)
-        embed = self.embed_drop(embeds)
+        embed = self.embed_drop(embeds)  # 1, 768
+
+        # encoder  512, 128 , 1 ->  encoder  [64,64]  64x64 ->  # 1, 768
+        # 2, 768
 
         hidden = self.rand_init_hidden(batch_size)
         # if embeds.is_cuda:

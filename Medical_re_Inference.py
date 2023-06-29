@@ -67,7 +67,7 @@ def find_subtext_index(text, keywords):
 
 
 class RE_Inference:
-    def __init__(self, config):
+    def __init__(self, config=config):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
         self.init_model(config.PATH_MODEL)

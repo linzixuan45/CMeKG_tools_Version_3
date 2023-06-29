@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1561cbfa-6aea-48ad-b213-b86128626cb0" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="1561cbfa-6aea-48ad-b213-b86128626cb0" name="更改" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/Muilt_model_fusion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SVD_Cos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/带SVD的cos相似度.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/All_models/model_ner/bert_lstm_crf.py" beforeDir="false" afterPath="$PROJECT_DIR$/All_models/model_ner/bert_lstm_crf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medical_ner_Inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/Medical_ner_Inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medical_re_Inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/Medical_re_Inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Medical_seg_Inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/Medical_seg_Inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/代码测试.py" beforeDir="false" afterPath="$PROJECT_DIR$/代码测试.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/思路流程.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/思路流程.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Anaconda3/envs/matting_py38/Lib/site-packages/sklearn/metrics/pairwise.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -33,27 +44,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "E:/acoding_task/医学关系抽取，实体识别/Version_3疾病和症状关系对应/All_models/model_cws",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Docker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/acoding_task/医学关系抽取，实体识别/Version_3疾病和症状关系对应&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应" />
+      <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\checkpoint\Pretrain_weight\medical_ner" />
+      <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\参考资料" />
       <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\All_models\model_cws" />
       <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\参考代码" />
-      <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应" />
-      <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\参考资料" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\参考代码" />
@@ -63,7 +75,29 @@
       <recent name="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\参考资料" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Medical_seg_Inference (1)">
+  <component name="RunManager" selected="Python.Muilt_model_fusion">
+    <configuration name="代码测试" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Version_3疾病和症状关系对应" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/代码测试.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Medical_ner_Inference" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Version_3疾病和症状关系对应" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +164,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Medical_seg_Inference" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Muilt_model_fusion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Version_3疾病和症状关系对应" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,29 +177,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\acoding_task\医学关系抽取，实体识别\Version_3疾病和症状关系对应\Medical_seg_Inference.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Trainer_ner" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Version_3疾病和症状关系对应" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trainer_ner.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Muilt_model_fusion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -198,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Muilt_model_fusion" />
+        <item itemvalue="Python.代码测试" />
         <item itemvalue="Python.Medical_seg_Inference (1)" />
         <item itemvalue="Python.Medical_ner_Inference" />
         <item itemvalue="Python.Medical_re_Inference" />
-        <item itemvalue="Python.Medical_seg_Inference" />
-        <item itemvalue="Python.Trainer_ner" />
       </list>
     </recent_temporary>
   </component>
@@ -224,8 +236,28 @@
       <workItem from="1686549741879" duration="5443000" />
       <workItem from="1686555305213" duration="70000" />
       <workItem from="1686555643097" duration="651000" />
-      <workItem from="1686556327246" duration="322000" />
+      <workItem from="1686556327246" duration="2536000" />
+      <workItem from="1686559456113" duration="23000" />
+      <workItem from="1686710518195" duration="5856000" />
+      <workItem from="1686720056971" duration="613000" />
+      <workItem from="1686742175826" duration="617000" />
+      <workItem from="1686744846720" duration="359000" />
+      <workItem from="1686745531843" duration="315000" />
+      <workItem from="1686791779129" duration="596000" />
+      <workItem from="1686896353036" duration="1281000" />
+      <workItem from="1687264183884" duration="4218000" />
+      <workItem from="1687682453322" duration="489000" />
+      <workItem from="1687960245690" duration="2979000" />
+      <workItem from="1687963925804" duration="8110000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1686556695122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686556695122</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,20 +268,37 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Version_3$Trainer_ner.coverage" NAME="Trainer_ner 覆盖结果" MODIFIED="1686553240098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_3$test.coverage" NAME="test 覆盖结果" MODIFIED="1686552213240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Version_3$.coverage" NAME="代码测试 覆盖结果" MODIFIED="1686540628557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Version_3$Medical_seg_Inference__1_.coverage" NAME="Medical_seg_Inference (1) 覆盖结果" MODIFIED="1686556454351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Version_3$Muilt_model_fusion.coverage" NAME="Muilt_model_fusion 覆盖结果" MODIFIED="1687973420858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Version_3$.coverage" NAME="代码测试 覆盖结果" MODIFIED="1687972972705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Version_3$Medical_seg_Inference__1_.coverage" NAME="Medical_seg_Inference (1) 覆盖结果" MODIFIED="1687961872894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_3$utils_re.coverage" NAME="utils_re 覆盖结果" MODIFIED="1686289509221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
     <SUITE FILE_PATH="coverage/Version_3$Medical_re_Inference.coverage" NAME="Medical_re_Inference 覆盖结果" MODIFIED="1686556160741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Version_3$Medical_cws_Inference.coverage" NAME="Medical_cws_Inference 覆盖结果" MODIFIED="1686554135326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Version_3$Medical_ner_Inference.coverage" NAME="Medical_ner_Inference 覆盖结果" MODIFIED="1686556435229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Version_3$Medical_ner_Inference.coverage" NAME="Medical_ner_Inference 覆盖结果" MODIFIED="1687264544933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
